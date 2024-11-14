@@ -53,7 +53,7 @@ int main(int argc, char** argv) {
     Process32First(process_snapshot, &pe32);
 
     do {
-        if (wcscmp(pe32.szExeFile, L"wesnoth.exe") == 0) {
+        if (wcscmp(pe32.szExeFile, L"client.exe") == 0) {
             // Save the pid and open a handle to the process
             pid = pe32.th32ProcessID;
 
